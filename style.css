@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}
+.text{
+    width:95%;
+    margin:0 auto;
+
+}
+
+.text h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    padding: 20px 0;
+}
+
+.plan-container{
+    width:95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+}
+
+.option-one{
+    background-color: blueviolet;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+.option-one h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+    line-height: 30px;
+}
+.option-one h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.option-one ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+.option-one ul li{
+    padding:10px 0;
+    font-size: 18px;
+    color:mistyrose;
+    font-weight: bold;
+}
+
+.option-one ul li::before{
+    content:"\2911";
+    color: mistyrose;
+    padding-right: 5px;
+}
+.option-one ul li:hover{
+    border-bottom: 1px solid rgb(13, 250, 104);
+    color:rgb(13, 250, 104);
+}
+
+.option-one button{
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+.option-one button:hover{
+    background: crimson;
+}
+
+.option-one:hover{
+    box-shadow: 0 0 3px 2px crimson;
+}
+
+@media screen and (max-width:768px){
+    .plan-container{
+        flex-direction: column;
+    }
+    .option-one{
+        width: 90%;
+    }
+
+}
